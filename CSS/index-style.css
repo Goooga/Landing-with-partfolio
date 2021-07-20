@@ -1,7 +1,6 @@
 .first-block{
     background-image: url("./back.jpg");
     background-size:auto;
-
     height: 100vh;
 }
 
@@ -12,26 +11,43 @@
     position: relative;
     top: 0;
     left: 0;
+    
 }
 
 .up p{
     display: inline-block;
-    
+    margin-left: 50px;
+    font-size: large;
+    user-select: none;
+    padding-bottom: 20px;
+    transition: padding-bottom 250ms;
 }
 
 .up p:hover{
     color: blue;
     border: blue solid;
     border-width: 0px 0px 2px 0px;
+    padding-bottom: 0px;
 }
 
 .middle{
-    width: 800px;
-    height: 400px;
+    height: 60%;
     position: relative;
-    top: 20%;
-    left:  10%;
-    background:red;
+    top: 10%;
+    left:  5%;
+}
+
+.middle *{
+    animation: appear 2s;
+}
+
+.middle p{
+    color:blue;
+    font-size: 20px;
+}
+
+.middle h1{
+    font-size: 70px;
 }
 .scroll{
     width: 200px;
@@ -40,10 +56,40 @@
     top: 10px;
     left: 80%;
     background:blue;
+    animation: rotateme 5s infinite linear;
 }
 
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.col p{
+    color: black;
+    font-size: 30px;
+}
+
+@keyframes rotateme{
+    from{
+        transform: rotate(0deg);
+    } to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear{
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    } to{
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
 .navbar{
-    background: whitesmoke;
+    background: black;
     width: 50px;
     height: 100vh;
     position: fixed;
@@ -54,4 +100,91 @@
 
 body{
     margin: 0;
+}
+
+.second-block{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image{
+    margin-left: 50px;
+    display: inline-block;
+    width: 40%;
+}
+
+.image img{
+    width: 100%;
+
+}
+.second-block p{
+    color: white;
+}
+
+.second-block h1{
+    color: white;
+}
+
+.punchline{
+    font-size: 20px;
+}
+.column{
+    width: 40%;
+    display: inline-block;
+}
+
+.column h1{
+    font-size: 60px;
+}
+
+.column h4{
+    color: white;
+    width: 80%;
+    font-size: 30px;
+    margin-top: 100px;
+    border: solid whitesmoke;
+    border-width: 2px 0px 0px 0px;
+}
+
+.third-block{
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.title{
+    width: 100%;
+}
+
+.peactures{
+    background: burlywood;
+    width: 100%;
+}
+
+.title .top{
+    color: blue;
+    font-size: 20px;
+    display: block;
+}
+
+.title h1{
+    display: inline-block;
+    width: 40%;
+    font-size: 40px;
+}
+
+.title p{
+    display: inline-block;
+    width: 50%;
 }
