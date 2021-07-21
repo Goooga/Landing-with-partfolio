@@ -7,13 +7,16 @@
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+.family{
+    width: 100%;
+}
 .first-block {
     background-image: url("./back.jpg");
     background-size: auto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     background: rgba(255, 255, 255, 0.3);
     width: 100%;
@@ -22,8 +25,8 @@
 
 .up {
     width: 100%;
-    height: 50px;
-    padding-left: 500px;
+    height: 5vh;
+    padding-left: 50vh;
     position: relative;
     top: 0;
     left: 0;
@@ -31,10 +34,10 @@
 
 .up p {
     display: inline-block;
-    margin-left: 50px;
-    font-size: 30px;
+    margin-left: 5vh;
+    font-size: 3vh;
     user-select: none;
-    padding-bottom: 20px;
+    padding-bottom: 2vh;
     transition: padding-bottom 250ms;
 }
 
@@ -47,7 +50,7 @@
 
 .middle {
     width: 70%;
-    height: 60%;
+    min-height: 60%;
     position: relative;
     top: 10%;
     left: 5%;
@@ -59,11 +62,11 @@
 
 .middle p {
     color: blue;
-    font-size: 40px;
+    font-size: 5vh;
 }
 
 .middle h1 {
-    font-size: 130px;
+    font-size: 13vh;
 }
 
 .col {
@@ -75,13 +78,13 @@
 
 .col p {
     color: black;
-    font-size: 50px;
-    width: 200px;
+    font-size: 5vh;
+    width: 20vh;
 }
 
 .scroll {
-    width: 200px;
-    height: 200px;
+    width: 20vh;
+    height: 20vh;
     position: relative;
     top: -10%;
     left: 80%;
@@ -115,18 +118,20 @@
 
 .navbar {
     background: black;
-    width: 50px;
+    width: 5vh;
     height: 100vh;
     position: fixed;
     left: 0px;
     top: 0px;
     z-index: 10;
 }
-.navbar .logo{
+
+.navbar .logo {
     width: 50px;
     position: fixed;
-bottom: 0px;
+    bottom: 0px;
 }
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -149,7 +154,7 @@ bottom: 0px;
 }
 
 .image img {
-    width: 100%;
+    width: 100vh;
     display: inline-block;
 }
 
@@ -164,17 +169,17 @@ bottom: 0px;
 }
 
 .column h1 {
-    font-size: 100px;
+    font-size: 10vh;
 }
 
 .column p {
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 .column h4 {
     width: 60%;
-    font-size: 40px;
-    margin-top: 100px;
+    font-size: 4vh;
+    margin-top: 10vh;
     border: solid whitesmoke;
     border-width: 2px 0px 0px 0px;
 }
@@ -197,8 +202,8 @@ bottom: 0px;
 .team-block h2 {
     display: inline-block;
     width: 40%;
-    font-size: 80px;
-    margin: 20px;
+    font-size: 8vh;
+    margin: 2vh;
 }
 
 .cards {
@@ -207,7 +212,7 @@ bottom: 0px;
 
 .team-block p {
     display: inline-block;
-    font-size: 20px;
+    font-size: 2vh;
     width: 50%;
 }
 
@@ -245,7 +250,7 @@ bottom: 0px;
 }
 
 .empty h4 {
-    font-size: 40px;
+    font-size: 4vh;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -260,13 +265,13 @@ bottom: 0px;
 }
 
 .scheme-block h2 {
-    font-size: 80px;
+    font-size: 8vh;
     width: 40%;
     display: inline-block;
 }
 
 .scheme-block p {
-    font-size: 30px;
+    font-size: 3vh;
     width: 50%;
     display: inline-block;
 }
@@ -362,7 +367,8 @@ bottom: 0px;
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.partener-block{
+
+.partener-block {
     min-height: 100vh;
     padding-left: 100px;
     padding-top: 20px;
@@ -372,16 +378,19 @@ bottom: 0px;
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.galery-block{
+
+.galery-block {
     min-height: 100vh;
     padding-left: 100px;
     padding-top: 20px;
     background: whitesmoke;
 }
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.footer{
+
+.footer {
     min-height: 20vh;
     padding-left: 100px;
     padding-top: 20px;
@@ -395,4 +404,113 @@ bottom: 0px;
 body {
     margin: 0;
     font-family: "SpaceLand-Ten";
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #CFD8DC;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: black;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #CFD8DC;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    padding-left: 100px;
+}
+
+.menu__item:hover {
+    background-color: #333;
+}
+
+.hamburger-menu {
+    background: black;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger-menu .logo {
+    width: 8vh;
+    position: fixed;
+    bottom: 0px;
+    
 }
