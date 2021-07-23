@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+.first-block{
+=======
 @font-face {
     font-family: "SpaceLand-Ten";
     src: url("./Spaceland-TenOblique.ttf") format('truetype');
@@ -11,6 +14,7 @@
     width: 100%;
 }
 .first-block {
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
     background-image: url("./back.jpg");
     background-size: auto;
     min-height: 100vh;
@@ -23,7 +27,11 @@
     height: 100%;
 }
 
+<<<<<<< HEAD
+.up{
+=======
 .up {
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
     width: 100%;
     height: 5vh;
     padding-left: 50vh;
@@ -65,8 +73,28 @@
     font-size: 5vh;
 }
 
+<<<<<<< HEAD
 .middle h1 {
     font-size: 13vh;
+=======
+<<<<<<< HEAD
+.middle h1{
+    font-size: 70px;
+}
+.scroll{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px;
+    left: 80%;
+    background:blue;
+    animation: rotateme 5s infinite linear;
+=======
+.middle h1 {
+    font-size: xx-large;
+    font-family: "Roboto_Condensed";
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
+>>>>>>> parent of f8dc619 (70987654321)
 }
 
 .col {
@@ -121,6 +149,12 @@
     width: 5vh;
     height: 100vh;
     position: fixed;
+<<<<<<< HEAD
+    left:0px;
+    top:0px;
+    z-index: 10;
+}
+=======
     left: 0px;
     top: 0px;
     z-index: 10;
@@ -133,11 +167,21 @@
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.second-block {
+<<<<<<< HEAD
+.second-block{
     height: 100vh;
+=======
+.second-block {
+<<<<<<< HEAD
+    height: 100vh;
+=======
+    min-height: 100vh;
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
+>>>>>>> parent of f8dc619 (70987654321)
     width: 100%;
     background: black;
     color: whitesmoke;
@@ -153,11 +197,19 @@
     width: 40%;
 }
 
+<<<<<<< HEAD
 .image img {
     width: 100vh;
     display: inline-block;
 }
 
+=======
+.image img{
+    width: 100%;
+
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f8dc619 (70987654321)
 .column {
     width: 40%;
     display: inline-block;
@@ -169,7 +221,15 @@
 }
 
 .column h1 {
+<<<<<<< HEAD
     font-size: 10vh;
+=======
+    font-size: 5vw;
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
+}
+.second-block p{
+    color: white;
+>>>>>>> parent of f8dc619 (70987654321)
 }
 
 .column p {
@@ -273,6 +333,9 @@
 .scheme-block p {
     font-size: 3vh;
     width: 50%;
+<<<<<<< HEAD
+}
+=======
     display: inline-block;
 }
 
@@ -492,6 +555,7 @@ body {
     padding-left: 100px;
 }
 
+<<<<<<< HEAD
 .menu__item:hover {
     background-color: #333;
 }
@@ -514,3 +578,21 @@ body {
     bottom: 0px;
     
 }
+=======
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
+>>>>>>> parent of f8dc619 (70987654321)
