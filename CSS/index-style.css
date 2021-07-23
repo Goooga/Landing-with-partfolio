@@ -1,121 +1,129 @@
 @font-face {
-    font-family: "Inter";
-    src: url("./Inter/static/Inter-Medium.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: "Roboto_Condensed";
-    src: url("./Roboto_Condensed/RobotoCondensed-Bold.ttf") format('truetype');
-}
-
-body {
-    margin: 0;
-    font-family: "Inter";
+    font-family: "SpaceLand-Ten";
+    src: url("./Spaceland-TenOblique.ttf") format('truetype');
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+.family{
+    width: 100%;
+}
 .first-block {
     background-image: url("./back.jpg");
-    background-size:auto;
-    height: 100vh;
+    background-size: auto;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
 }
 
 .up {
     width: 100%;
-    height: 50px;
-    padding-left: 50px;
+    height: 5vh;
+    padding-left: 50vh;
     position: relative;
     top: 0;
     left: 0;
-    
 }
 
-.up p{
+.up p {
     display: inline-block;
-    margin-left: 50px;
-    font-size: large;
+    margin-left: 5vh;
+    font-size: 3vh;
     user-select: none;
-    padding-bottom: 20px;
+    padding-bottom: 2vh;
     transition: padding-bottom 250ms;
 }
 
-.up p:hover{
+.up p:hover {
     color: blue;
     border: blue solid;
     border-width: 0px 0px 2px 0px;
     padding-bottom: 0px;
 }
 
-.middle{
+.middle {
     width: 70%;
-    height: 60%;
+    min-height: 60%;
     position: relative;
     top: 10%;
-    left:  5%;
+    left: 5%;
 }
 
-.middle *{
+.middle * {
     animation: appear 2s;
 }
 
-.middle p{
-    color:blue;
-    font-size: 20px;
+.middle p {
+    color: blue;
+    font-size: 5vh;
 }
 
-.middle h1{
-    font-size: 70px;
-}
-.scroll{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: 10px;
-    left: 80%;
-    background:blue;
-    animation: rotateme 5s infinite linear;
+.middle h1 {
+    font-size: 13vh;
 }
 
-.col{
+.col {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 50%;
 }
 
-.col p{
+.col p {
     color: black;
-    font-size: 30px;
+    font-size: 5vh;
+    width: 20vh;
 }
 
-@keyframes rotateme{
-    from{
+.scroll {
+    width: 20vh;
+    height: 20vh;
+    position: relative;
+    top: -10%;
+    left: 80%;
+    background: blue;
+    animation: rotateme 5s infinite linear;
+}
+
+@keyframes rotateme {
+    from {
         transform: rotate(0deg);
-    } to{
+    }
+    to {
         transform: rotate(360deg);
     }
 }
 
-@keyframes appear{
-    from{
-        transform: translateY(50px);
+@keyframes appear {
+    from {
+        transform: translateY(100px);
         opacity: 0;
-    } to{
+    }
+    to {
         transform: translateY(0px);
         opacity: 100;
     }
 }
-.navbar{
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar {
     background: black;
-    width: 50px;
+    width: 5vh;
     height: 100vh;
     position: fixed;
     left: 0px;
     top: 0px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .navbar .logo {
@@ -126,12 +134,10 @@ body {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-body{
-    margin: 0;
-}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .second-block {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background: black;
     color: whitesmoke;
@@ -141,15 +147,17 @@ body{
     align-items: center;
 }
 
-.image{
+.image {
     margin-left: 50px;
     display: inline-block;
     width: 40%;
 }
 
-.image img{
-    width: 100%;
+.image img {
+    width: 100vh;
+    display: inline-block;
 }
+
 .column {
     width: 40%;
     display: inline-block;
@@ -157,84 +165,113 @@ body{
 
 .column .punchline {
     color: blue;
-    font-size: large;
+    font-size: 30px;
 }
 
 .column h1 {
-    font-size: 5vw;
-}
-.second-block p{
-    color: white;
-}
-.menu-item{
-    user-select: none;
-}
-.menu-item:hover{
-    background: gray;
-}
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.second-block h1{
-    color: white;
+    font-size: 10vh;
 }
 
-.punchline{
-    font-size: 20px;
-}
-.column{
-    width: 40%;
-    display: inline-block;
+.column p {
+    font-size: 3vh;
 }
 
-.column h1{
-    font-size: 60px;
-}
-
-.column h4{
-    color: white;
-    width: 80%;
-    font-size: 30px;
-    margin-top: 100px;
+.column h4 {
+    width: 60%;
+    font-size: 4vh;
+    margin-top: 10vh;
     border: solid whitesmoke;
     border-width: 2px 0px 0px 0px;
 }
 
-.third-block{
+.team-block {
     min-height: 100vh;
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 10%;
+    padding-left: 100px;
+    padding-top: 20px;
+    background: black;
+    color: white;
 }
 
-.title{
-    width: 100%;
-}
-
-.peactures{
-    background: burlywood;
-    width: 100%;
-}
-
-.title .top{
+.team-block .top {
     color: blue;
     font-size: 20px;
     display: block;
+    margin: 20px;
 }
 
-.title h1{
+.team-block h2 {
     display: inline-block;
     width: 40%;
-    font-size: 40px;
+    font-size: 8vh;
+    margin: 2vh;
 }
 
-.title p{
+.cards {
+    margin-top: 50px;
+}
+
+.team-block p {
     display: inline-block;
+    font-size: 2vh;
+    width: 50%;
+}
+
+.team-block .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: initial;
+}
+
+.card {
+    width: min-content;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.card .name {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.card .pro {
+    font-size: 20px;
+    color: blue;
+    margin: 10px;
+}
+
+.empty {
+    width: 300px;
+    height: 400px;
+    border: solid whitesmoke 1px;
+    padding: 50px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.empty h4 {
+    font-size: 4vh;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.scheme-block {
+    min-height: 100vh;
+    padding-left: 100px;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+
+.scheme-block h2 {
+    font-size: 8vh;
+    width: 40%;
+    display: inline-block;
+}
+
+.scheme-block p {
+    font-size: 3vh;
     width: 50%;
     display: inline-block;
 }
@@ -274,66 +311,6 @@ body{
     display: inline-block;
 }
 
-.client-form{
-    height: 400px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 70vh;
-    margin-top: -100px;
-    margin-left: -250px;
-    background: white;
-    display: none;
-    border-radius: 5px;
-    z-index: 10;
-}
-
-.client-form h1{
-    color: black;
-    position: relative;
-    left: 50px;
-    top: 0px;
-}
-
-
-.close-form{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    background: black;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inf{
-    height: 100%;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box1{
-    position: absolute;
-    width: 25px;
-    height: 7px;
-    background: white;
-    border-radius: 10px;
-    transform: rotate(45deg);
-}
-
-.box2{
-    position: absolute;
-    width: 7px;
-    height: 25px;
-    background: white;
-    border-radius: 10px;
-    transform: rotate(45deg); 
-}
 @keyframes pulse {
     from {
         transform: scale(1.0);
@@ -381,80 +358,23 @@ body{
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .achiv-block {
-    height: 100vh;
+    min-height: 100vh;
     padding-left: 100px;
     padding-top: 20px;
     background: whitesmoke;
-    display: flex;
-    align-items: center;
-}
-.flex-col{
-    display: inline-block;
-}
-.big_achiv{
-    height: 90vh;
-    width: 90vh;
-    max-width: 33vw;
-    max-height: 33vw;
-    background: red;
-    margin: 20px;
-    display: inline-block;
-    color:rgba(0, 0, 0, 0);
-    box-sizing: border-box;
 }
 
-.small_achiv{
-    height: 45vh;
-    width: 45vh;
-    max-width: 16vw;
-    max-height: 16vw;
-    background: red;
-    margin: 20px;
-    color:rgba(0, 0, 0, 0);
-    box-sizing: border-box;
-}
-
-.big_achiv:hover{
-color: black;
-}
-
-.small_achiv:hover{
-    color: black;
-    }
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .partener-block {
+    min-height: 100vh;
     padding-left: 100px;
     padding-top: 20px;
     background: black;
-    color: whitesmoke;
 }
 
-.partener-block h1{
-    width: 30%;
-    display: inline-block;
-}
-
-.partener-block p{
-    width: 50%;
-    display: inline-block;
-}
-.partener-block .partner{
-    display: inline-block;
-    margin: 20px;
-}
-
-.partner img{
-    height: 10vw;
-    width: 10vw;
-}
-.partner-continer{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -465,88 +385,6 @@ color: black;
     padding-top: 20px;
     background: whitesmoke;
 }
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -556,77 +394,123 @@ color: black;
     min-height: 20vh;
     padding-left: 100px;
     padding-top: 20px;
-    background: whitesmoke;
+    background: black;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* скрываем чекбокс */
+body {
+    margin: 0;
+    font-family: "SpaceLand-Ten";
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 #menu__toggle {
     opacity: 0;
-  }/* стилизуем кнопку */
-  .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 20px;
-    left: 10px;  width: 26px;
-    height: 26px;  cursor: pointer;
-    z-index: 2;
-  }/* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
     display: block;
-    position: absolute;  width: 100%;
-    height: 2px;  background-color: #616161;
-  }
-  .menu__btn > span::before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #CFD8DC;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
     content: '';
     top: -8px;
-  }
-  .menu__btn > span::after {
+}
+
+.menu__btn>span::after {
     content: '';
     top: 8px;
-  }
+}
 
-  /* контейнер меню */
 .menu__box {
     display: block;
     position: fixed;
     visibility: hidden;
     top: 0;
-    left: -100%;  width: 300px;
-    height: 100%;  margin: 0;
-    padding: 80px 0;  list-style: none;
-    text-align: center;  background-color: black;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: black;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }/* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;  color: whitesmoke;  font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;  text-decoration: none;
-    box-sizing: border-box;
-  }
-  .menu__item:hover {
-background: gray;
-  }
+    transition-duration: .25s;
+}
 
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #CFD8DC;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    padding-left: 100px;
+}
+
+.menu__item:hover {
+    background-color: #333;
+}
+
+.hamburger-menu {
+    background: black;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger-menu .logo {
+    width: 7vh;
+    position: fixed;
+    bottom: 0px;
+    
+}
