@@ -1,6 +1,5 @@
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
-
 
 
 // Next/previous controls
@@ -33,6 +32,13 @@ function showSlides(n) {
 /*-----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------*/
 
-function ShowWindow(n){
-
+function ShowWindow(id){
+  document.getElementById(id).style.display = "block";
 }
+
+function HideWindow(id){
+  document.getElementById(id).style.display = "none";
+}
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+

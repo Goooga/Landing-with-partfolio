@@ -3,15 +3,10 @@
 <head>
     <title>Hello world</title>
     <link rel="stylesheet" type="text/css" href="./CSS/index-style.css">
-    <script src="./scripts.js"></script>
+
 </head>
 
-<<<<<<< HEAD
 <body>
-    <div class="navbar"></div>
-    <div class="first-block">
-=======
-<body onload="showSlides(1)">
     <div class="navbar">
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
@@ -30,7 +25,6 @@
     </div>
     <div class="first-block">
         <div class="overlay"></div>
->>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
         <div class="up">
             <p>О проекте</p>
             <p>Команда</p>
@@ -39,19 +33,11 @@
             <p>Контакты</p>
         </div>
         <div class="middle">
-<<<<<<< HEAD
-            <p>What’s the product of your company </p>
-            <h1>PUT THE SLOGAN OF YOUR COMPANY HERE</h1>
-            <div class="col">
-                <p>Small detail here</p>
-                <p>And over here something can be listed</p>
-=======
             <p>Мастерская Технического Творчества "Spark"</p>
             <h1>Строители будущего</h1>
             <div class="col">
                 <p>Проведем вас в мир технического творчества, научим созидать</p>
                 <p>Для энтузиастов цифрового движения</p>
->>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
             </div>
         </div>
         <div class="scroll">
@@ -60,24 +46,9 @@
         </div>
     </div>
     <div class="second-block">
-        <div class = "image">
-            <img src = "profile.jpg">
+        <div class="image">
+            <img src="profile.jpg">
         </div>
-<<<<<<< HEAD
-        <div class = "column">
-            <p class = "punchline">Here comes the punchline again</p>
-            <h1>OUR MISSION</h1>
-            <p>A company can be created as a legal person so that the company itself has limited liability as members perform or fail to discharge their duty according to the publicly declared incorporation, or published policy. When a company closes, it may need to be liquidated to avoid further legal obligations.</p>
-            <h4>How to Become a Member</h4>
-            <h4>Interesting Story Here</h4>
-        </div>
-    </div>
-    <div class = "third-block">
-        <div class = "title">
-            <p class = "top">Meet the pros</p>
-            <h1>THE TEAM</h1>
-            <p>With a discrete legal personality, perpetual succession, and also with a common seal. Except for some senior positions.</p>
-=======
         <div class="column">
             <p class="punchline">Строители будущего</p>
             <h1>Техническое творчество</h1>
@@ -85,8 +56,27 @@
                 has limited liability as members perform or fail to discharge their
                 duty according to the publicly declared incorporation, or published policy.
                 When a company closes, it may need to be liquidated to avoid further legal obligations.</p>
-            <h4 class="menu-item">Записаться на занятия</h4>
+            <h4 class="menu-item" onclick="ShowWindow('form');">Записаться на занятия</h4>
             <h4 class="menu-item">Поддержать проект</h4>
+        </div>
+        <div class="client-form" id="form">
+            <h1>Записаться на занятия</h1>
+            <div class="inf">
+                <form action="/action_page.php">
+                    <label for="fname"> Имя</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="lname"> Фамилия</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br>
+                    <label for="lname"> Телефон</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </form>
+            </div>
+            <div class="close-form" onclick="HideWindow('form')">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
         </div>
     </div>
 
@@ -158,12 +148,9 @@
                     </div>
                 </div>
             </div>
->>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
         </div>
-        <div class = "pictures"></div>
+        <div class="pictures"></div>
     </div>
-<<<<<<< HEAD
-=======
 
     <div class="achiv-block">
         <div class="big_achiv">
@@ -291,7 +278,6 @@
             </div>
         </div>
     </div>
-
+    <script src="./scripts.js"></script>
     <div class="footer"></div>
->>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
 </body>
