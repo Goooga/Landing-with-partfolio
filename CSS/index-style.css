@@ -1,10 +1,37 @@
+<<<<<<< HEAD
 .first-block{
+=======
+@font-face {
+    font-family: "Inter";
+    src: url("./Inter/static/Inter-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto_Condensed";
+    src: url("./Roboto_Condensed/RobotoCondensed-Bold.ttf") format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: "Inter";
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.first-block {
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
     background-image: url("./back.jpg");
     background-size:auto;
     height: 100vh;
 }
 
+<<<<<<< HEAD
 .up{
+=======
+.up {
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
     width: 100%;
     height: 50px;
     padding-left: 50px;
@@ -47,6 +74,7 @@
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 .middle h1{
     font-size: 70px;
 }
@@ -58,6 +86,11 @@
     left: 80%;
     background:blue;
     animation: rotateme 5s infinite linear;
+=======
+.middle h1 {
+    font-size: xx-large;
+    font-family: "Roboto_Condensed";
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
 }
 
 .col{
@@ -94,17 +127,37 @@
     width: 50px;
     height: 100vh;
     position: fixed;
+<<<<<<< HEAD
     left:0px;
     top:0px;
     z-index: 10;
 }
+=======
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar .logo {
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
 
 body{
     margin: 0;
 }
 
+<<<<<<< HEAD
 .second-block{
     height: 100vh;
+=======
+.second-block {
+    min-height: 100vh;
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
     width: 100%;
     background: black;
     color: whitesmoke;
@@ -123,10 +176,34 @@ body{
 .image img{
     width: 100%;
 
+<<<<<<< HEAD
+=======
+.column {
+    width: 40%;
+    display: inline-block;
+}
+
+.column .punchline {
+    color: blue;
+    font-size: large;
+}
+
+.column h1 {
+    font-size: 5vw;
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
 }
 .second-block p{
     color: white;
 }
+.menu-item{
+    user-select: none;
+}
+.menu-item:hover{
+    background: gray;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .second-block h1{
     color: white;
@@ -188,4 +265,341 @@ body{
 .title p{
     display: inline-block;
     width: 50%;
+<<<<<<< HEAD
 }
+=======
+    display: inline-block;
+}
+
+.scheme {
+    background-image: url("./scheme.png");
+    background-size: contain;
+    width: 1000px;
+    height: 700px;
+    margin: auto;
+}
+
+.circle-up {
+    width: 40px;
+    height: 40px;
+    background: blue;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.circle-down {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 255, 0.5);
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: pulse 2s infinite linear;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}
+
+#b1 {
+    top: 285px;
+    left: 270px;
+}
+
+#b2 {
+    top: 500px;
+    left: 150px;
+}
+
+#b3 {
+    top: 185px;
+    left: 360px;
+}
+
+#b4 {
+    top: 300px;
+    left: 350px;
+}
+
+#b5 {
+    top: 230px;
+    left: 450px;
+}
+
+#b6 {
+    top: 350px;
+    left: 450px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.achiv-block {
+    height: 100vh;
+    padding-left: 100px;
+    padding-top: 20px;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+.flex-col{
+    display: inline-block;
+}
+.big_achiv{
+    height: 90vh;
+    width: 90vh;
+    max-width: 33vw;
+    max-height: 33vw;
+    background: red;
+    margin: 20px;
+    display: inline-block;
+    color:rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+.small_achiv{
+    height: 45vh;
+    width: 45vh;
+    max-width: 16vw;
+    max-height: 16vw;
+    background: red;
+    margin: 20px;
+    color:rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+
+.big_achiv:hover{
+color: black;
+}
+
+.small_achiv:hover{
+    color: black;
+    }
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.partener-block {
+    padding-left: 100px;
+    padding-top: 20px;
+    background: black;
+    color: whitesmoke;
+}
+
+.partener-block h1{
+    width: 30%;
+    display: inline-block;
+}
+
+.partener-block p{
+    width: 50%;
+    display: inline-block;
+}
+.partener-block .partner{
+    display: inline-block;
+    margin: 20px;
+}
+
+.partner img{
+    height: 10vw;
+    width: 10vw;
+}
+.partner-continer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.galery-block {
+    min-height: 100vh;
+    padding-left: 100px;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+    min-height: 20vh;
+    padding-left: 100px;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }/* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 10px;  width: 26px;
+    height: 26px;  cursor: pointer;
+    z-index: 2;
+  }/* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;  width: 100%;
+    height: 2px;  background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;  width: 300px;
+    height: 100%;  margin: 0;
+    padding: 80px 0;  list-style: none;
+    text-align: center;  background-color: black;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }/* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;  color: whitesmoke;  font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;  text-decoration: none;
+    box-sizing: border-box;
+  }
+  .menu__item:hover {
+background: gray;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+>>>>>>> c75a1895ec3d90a5130f347d407f4c92b78052eb
